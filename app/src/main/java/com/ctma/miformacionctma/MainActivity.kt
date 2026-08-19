@@ -55,16 +55,24 @@ fun PantallaInicio(nombre: String = "Aprendiz"){
             text = "Aquí organizarás actividades y evidencias"
         )
 
-        // Creación de tarjetas!!!!!!!
-        /*
-        Spacer(Modifier.height(16.dp))
+        Spacer(modifier = Modifier.height(24.dp))
 
-        Card(modifier = Modifier.fillMaxWidth()) {
-            Column(modifier = Modifier.padding(24.dp)) {
-                Text("Tarjeta")
+        Card(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(vertical = 8.dp)
+        ) {
+            Column(modifier = Modifier.padding(16.dp)) {
+                Text(
+                    text = "Próximo compromiso formativo",
+                    style = MaterialTheme.typography.titleMedium
+                )
+                Spacer(modifier = Modifier.height(8.dp))
+                Text(text = "Taller: Primer proyecto Android")
+                Text(text = "Fecha límite: 20 de agosto")
+                Text(text = "Estado: Realizado")
             }
         }
-        */
     }
 }
 
